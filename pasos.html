@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilospasos.css">
+    <title>Paso Paso</title>
+</head>
+<body>
+    <div class="root">
+        <form action="" class="pasos">
+            <div class="">
+                <ul class="progressbar">
+                    <li class="progressbar__option active">paso 1</li>
+                    <li class="progressbar__option">paso 2</li>
+                    <li class="progressbar__option">paso 3</li>
+                    <li class="progressbar__option">paso 3</li>
+                </ul>
+                <h2 class="form-register__title">SIGUE LOS PASOS</h2>
+            </div>
+            <div class="form-register__body">
+                <div class="step active" id="step-1">
+                    <!-- Informacion -->
+                    <h1>Hola Mundo</h1>
+                    <div class="step__footer">
+                        <a href="index.html" class="step__button">Inicio</a>
+                        <button type="button" class="step__button step__button--next" data-to_step="2" data-step="1">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" id="step-2">
+                    <!-- Informacion -->
+                    <h1>Hola Mundini</h1>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--back" data-to_step="1" data-step="2">Atrás</button>
+                        <button type="button" class="step__button step__button--next" data-to_step="3" data-step="2">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" id="step-3">
+                    <!-- Informacion -->
+                    <h1>Hola Mundo</h1>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--back" data-to_step="2" data-step="3">Atrás</button>
+                        <button type="button" class="step__button step__button--next" data-to_step="4" data-step="3">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" id="step-4">
+                    <!-- Informacion -->
+                    <h1>Hola Mundini</h1>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--back" data-to_step="3" data-step="4">Atrás</button>
+                        <button type="submit" class="step__button">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/pasos.js"></script>
+</body>
+</html>
